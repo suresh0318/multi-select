@@ -22,7 +22,10 @@ const Drag3 = ({ values }) => {
   let arr = places[values];
 
   const Multipleselect = (e) => {
-    if (value3.indexOf(e.target.value) !== -1) {
+if(e.target.value == "select all"){
+setValue3(arr)
+}
+    else if (value3.indexOf(e.target.value) !== -1) {
       alert("already selected");
     } else {
       setValue3([...value3, e.target.value]);
@@ -34,8 +37,9 @@ const Drag3 = ({ values }) => {
         <div>
           <select defaultValue={""} onChange={Multipleselect}>
           <option value="" disabled>
-              Select place
+              Select district
             </option>
+            <option>select all</option>
             <option>{arr[0]}</option>
             <option>{arr[1]}</option>
             <option>{arr[2]}</option>
