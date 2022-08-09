@@ -32,7 +32,10 @@ const Drag3 = ({ values }) => {
     <div className="center-drag3">
       {values && (
         <div>
-          <select onChange={Multipleselect} className="selectpicker">
+          <select defaultValue={""} onChange={Multipleselect}>
+          <option value="" disabled>
+              Select place
+            </option>
             <option>{arr[0]}</option>
             <option>{arr[1]}</option>
             <option>{arr[2]}</option>
