@@ -22,7 +22,7 @@ const Drag3 = ({ values }) => {
   let arr = places[values];
 
   const Multipleselect = (e) => {
-if(e.target.value == "select all"){
+if(e.target.value === "select all"){
 setValue3(arr)
 }
     else if (value3.indexOf(e.target.value) !== -1) {
