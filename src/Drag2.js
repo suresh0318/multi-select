@@ -6,7 +6,7 @@ const Drag2 = ({ value }) => {
   const [value2, setValue2] = useState("");
   return (
     <div className="center-drag2">
-      {value == "Telangana" ? (
+      {value === "Telangana" ? (
         <div>
           <select defaultValue={""} onChange={(e) => setValue2(e.target.value)}>
             <option value="" disabled>
@@ -18,7 +18,7 @@ const Drag2 = ({ value }) => {
           </select>
           <Drag3 values={value2} />
         </div>
-      ) : value == "Bengaluru" ? (
+      ) : value === "Bengaluru" ? (
         <div>
           <select defaultValue={""} onChange={(e) => setValue2(e.target.value)}>
             <option value="" disabled>
@@ -30,7 +30,7 @@ const Drag2 = ({ value }) => {
           </select>
           <Drag3 values={value2} />
         </div>
-      ) : value == "Maharashtra" ? (
+      ) : value === "Maharashtra" ? (
         <div>
           <select defaultValue={""} onChange={(e) => setValue2(e.target.value)}>
             <option value="" disabled>
@@ -43,7 +43,7 @@ const Drag2 = ({ value }) => {
           <Drag3 values={value2} />
         </div>
       ) : (
-        <h1></h1>
+        <h1>{}</h1>
       )}
     </div>
   );
