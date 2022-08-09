@@ -24,7 +24,7 @@ const Drag2 = ({ value }) => {
             <option value="" disabled>
               Select district
             </option>
-            <option>Chikkaballapur</option>
+            <option>Chikballapur</option>
             <option>Kolar</option>
             <option>Tumakuru</option>
           </select>
