@@ -4,31 +4,32 @@ import { apop, apush } from "./store/arraySlice";
 import { aname } from "./store/nameSlice";
 
 const Arrays = () => {
- const [userName,setUserName] = useState("")
-const dispatch = useDispatch()
+  const [userName, setUserName] = useState("");
+  const dispatch = useDispatch();
   return (
     <div>
-      
       <button
         onClick={() => {
-             dispatch(apop())
+          dispatch(apop());
         }}
       >
         pop
       </button>
       <button
         onClick={() => {
-          dispatch(apush())
+          dispatch(apush());
         }}
       >
         push
       </button>
-    
-<input type="text" onChange={(e) => {
-          setUserName(e.target.value)
-          dispatch(aname(userName))
-        }}/>
 
+      <input
+        type="text"
+        onChange={(e) => {
+          setUserName(e.target.value);
+          dispatch(aname(userName));
+        }}
+      />
     </div>
   );
 };
