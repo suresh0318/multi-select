@@ -1,10 +1,12 @@
 import "./App.css";
-import Drag from "./Drag";
+import Arrays from "./Arrays";
+import Client from "./Client";
 
 function App() {
   return (
     <>
-      <Drag />
+      <Client />
+      <Arrays />
     </>
   );
 }
